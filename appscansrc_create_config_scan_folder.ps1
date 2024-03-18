@@ -37,8 +37,8 @@ else{
   write-output "of `"$env:WorkingDirectory`"" >> script.scan
   #write-output "sc `"$env:aseAppName-$env:BuildNumber.ozasmt`" -scanconfig `"$env:scanConfig`" -name `"$env:aseAppName-$env:BuildNumber`" -sourcecodeonly true" >> script.scan
   write-output "sc" >> script.scan
-  write-output "report Findings pdf-detailed `"$env:aseAppName-$env:BuildNumber.pdf`" `"$env:aseAppName-$env:BuildNumber.ozasmt`" -includeSrcBefore:5 -includeSrcAfter:5 -includeTrace:definitive -includeTrace:suspect -includeHowToFix" >> script.scan
-  write-output "pa `"$env:aseAppName-$env:BuildNumber.ozasmt`"" >> script.scan
+  #write-output "report Findings pdf-detailed `"$env:aseAppName-$env:BuildNumber.pdf`" `"$env:aseAppName-$env:BuildNumber.ozasmt`" -includeSrcBefore:5 -includeSrcAfter:5 -includeTrace:definitive -includeTrace:suspect -includeHowToFix" >> script.scan
+  #write-output "pa `"$env:aseAppName-$env:BuildNumber.ozasmt`"" >> script.scan
   write-output "exit" >> script.scan
   
   write-host "Config file created (source code only scan)."
